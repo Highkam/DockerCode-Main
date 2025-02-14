@@ -1,5 +1,6 @@
 Camilo Navarro y Brayan Cantillo
-Repositorio secundario:https://github.com/Highkam/Docker-Codes
+
+Repositorio secundario: https://github.com/Highkam/Docker-Codes
 Para ejecutar el contenedor de forma adecuada seguir las siguentes instrucciones:
 
 Para clonar el repositorio, usa el comando:
