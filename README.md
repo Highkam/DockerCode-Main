@@ -15,5 +15,13 @@ docker build -t main .
 ```
 Ejecuta el comando Run
 ```bash
-docker run -it main
+docker run --privileged -d --name main_container main
+```
+Ejecuta el comando Exec
+```bash
+docker exec -it main_container bash
+```
+Ejecuta el script
+```bash
+./runner.sh
 ```
