@@ -25,6 +25,12 @@ for dir in */ ; do
         echo "Saltando $dir (no contiene un Dockerfile)"
     fi
 done
-
+for dir in */ ; do
+    # Verificar si es un directorio y contiene un Dockerfile esto para correr las imagenes
+    if [ -d "$dir" ] && [ -f "$dir/Dockerfile" ]; then
+        IMAGE_NAME=$(basename "$dir" | tr '[:upper:]' '[:lower:]')
+        docker run --rm "$IMAGE_NAME"
+    fi
+done
 echo "Proceso completado."
 
